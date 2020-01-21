@@ -8,5 +8,6 @@ Perquisites: None.
 3. Open a terminal in ./sonar
 4. run 'docker-compose up -d'
 5. Open a terminal in the project root
-5. Run the sonarqube task: './gradlew sonarqube'
+6. Run the sonarqube task: './gradlew sonarqube'
+7. View localhost:9000 in your browser
 
