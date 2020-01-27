@@ -3,7 +3,6 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 	id "org.sonarqube" version "2.7"
-
 }
 
 group = 'com.example.sonar'
@@ -16,7 +15,10 @@ repositories {
 
 sonarqube {
 	properties {
-		property "sonar.sourceEncoding", "UTF-8"
+		System.setProperty("sonar.projectKey","sonar-demo")
+		System.setProperty("sonar.host.url", ""); //TODO
+		System.setProperty("sonar.login", ""); //TODO
+		System.setProperty("sonar.sourceEncoding","UTF-8")
 	}
 }
 
